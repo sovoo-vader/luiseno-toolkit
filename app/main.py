@@ -1,7 +1,10 @@
 
 # Streamlit Main Interface – Extended for 20 Script Suite
+
 import sys
 import os
+
+# 👇 ADD THIS to fix dynamic module loading
 sys.path.append(os.path.dirname(__file__))
 
 import streamlit as st
