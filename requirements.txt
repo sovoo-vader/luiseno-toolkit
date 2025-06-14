@@ -1,0 +1,9 @@
+datasets
+gtts
+matplotlib
+nltk
+seaborn
+speechrecognition
+streamlit
+textblob
+transformers
