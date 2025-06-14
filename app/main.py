@@ -34,7 +34,7 @@ selected_tool = st.sidebar.selectbox("Select Tool", tools[selected_category])
 
 if st.sidebar.button("Run Tool"):
     try:
-        module = importlib.import_module(f"app.{selected_tool}")
+        module = importlib.import_module(selected_tool)
         st.success(f"✅ Running: {selected_tool}")
         if hasattr(module, "main"):
             module.main()
